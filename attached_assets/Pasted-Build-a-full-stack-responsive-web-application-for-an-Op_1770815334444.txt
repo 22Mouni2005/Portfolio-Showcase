@@ -1,0 +1,189 @@
+Build a full-stack responsive web application for an Optometrist Clinic Patient Management System.
+
+Tech Stack:
+- Frontend: React.js (with Tailwind CSS for responsiveness)
+- Backend: Node.js + Express
+- Database: MongoDB
+- Drawing Feature: HTML5 Canvas or Fabric.js for fundus drawing
+- Must be mobile + tablet + desktop responsive
+- Clean medical UI design (blue/white theme)
+
+MAIN REQUIREMENTS:
+
+1️⃣ FIRST PAGE (Patient Registration / Case History Page)
+
+The first page layout must include the following fields:
+
+Basic Details:
+- Name of the Student
+- Age
+- Gender (Dropdown)
+- Registration Number
+- MRD Number
+- Occupation
+- Contact Number
+
+Case History Section:
+- Chief Complaint (Textarea)
+- Glasses History
+- PGP
+- History of Consultation
+- Family History
+- History of Trauma
+- History of Systemic Disease
+- History of Medication
+- History of Surgery
+- History of Allergies
+- Social History
+
+Include Save, Edit, and Delete buttons.
+Data should be stored in MongoDB.
+
+---
+
+2️⃣ CLINICAL EXAMINATION PAGES
+
+Create separate tabs or sections for:
+
+A) Visual Acuity
+- Distance (OD / OS)
+- Near (OD / OS)
+- Unaided
+- With Pinhole
+- Previous Glasses (Spherical, Cylindrical, Axis)
+- With Old Glasses
+- Objective Refraction
+- Subjective Refraction
+- Visual Acuity with New Correction
+
+B) Color Vision Test (OD / OS)
+
+C) Keratometry
+- Vertical
+- Horizontal
+- Comments
+
+D) Cover Test
+E) NPC (Subjective & Objective)
+F) EOM
+G) NPA (OD/OS/OU)
+H) WFDT
+I) Stereopsis
+
+---
+
+3️⃣ ANTERIOR SEGMENT PAGE
+
+Include sections for:
+- Pupillary Evaluation
+- External Examination
+- Palpebral Fissure Height
+- Slit Lamp Examination Table (OD / OS columns)
+
+Table Rows:
+- Ocular Adnexa
+- Cornea
+- Conjunctiva
+- Sclera
+- Anterior Chamber
+- Iris
+- Pupil
+- Lens
+
+---
+
+4️⃣ TONOMETRY & SPECIAL TESTS PAGE
+
+Include:
+- Tonometry (mmHg) with Method & Time
+- Gonioscopy
+- TBUT (OD / OS)
+- Schirmer's Test (OD / OS)
+- Syringing (OD / OS)
+- ROPLAS (OD / OS)
+- Other Procedures
+- Dilation Instructions
+
+---
+
+5️⃣ FUNDUS EXAMINATION PAGE (VERY IMPORTANT)
+
+Create two eye diagrams labeled:
+- OD (Right Eye)
+- OS (Left Eye)
+
+Each diagram must:
+- Be drawn using HTML5 Canvas or Fabric.js
+- Allow freehand drawing
+- Allow color selection (Red, Yellow, White, Green)
+- Allow marking:
+    - Cupping
+    - Hemorrhages
+    - Exudates
+    - Macular changes
+- Include Eraser tool
+- Include Clear button
+- Save drawing data to database as image or JSON
+- Reload drawing when patient record is opened
+
+---
+
+6️⃣ DIAGNOSIS & MANAGEMENT PAGE
+
+Include:
+- Diagnosis (Textarea)
+- Intervention Planned (Textarea)
+- Learning Notes (Textarea)
+
+---
+
+7️⃣ ADDITIONAL FEATURES
+
+- Patient search by Name / MRD Number
+- View all patients table
+- Edit existing records
+- PDF Export of complete case sheet
+- Print option
+- Secure login for doctor
+- Form validation
+- Autosave draft
+- Dark mode toggle
+
+---
+
+8️⃣ UI REQUIREMENTS
+
+- Professional hospital-style interface
+- Tabs or sidebar navigation
+- Collapsible sections
+- Responsive grid layout
+- Clean typography
+- Smooth transitions
+
+---
+
+9️⃣ DATABASE STRUCTURE
+
+Create a structured MongoDB schema including:
+- PatientInfo
+- ClinicalExamination
+- AnteriorSegment
+- SpecialTests
+- FundusDrawingData
+- Diagnosis
+
+Ensure proper relational referencing.
+
+---
+
+🔟 DELIVERABLES
+
+Provide:
+- Complete folder structure
+- Backend code
+- Frontend code
+- MongoDB schema
+- Installation instructions
+- How to run locally
+- Deployment guide (Vercel + Render)
+
